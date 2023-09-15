@@ -12,7 +12,7 @@ public class ArrayEx {
 		System.out.println("calcSum4(): " + calcSum4(numbers));
 		System.out.println("Average of {1.1,2.2,3.3} = " + calcAverage(numbers));
 		System.out.println("Number positive = " + numPositive(numbers));
-		double[] numbersWithNegative = { 1.1, 2.2, 3.3, -1, -2};
+		double[] numbersWithNegative = { 1.1, 2.2, 3.3, -1, -2 };
 		System.out.print("Array: ");
 		printArray(numbersWithNegative);
 		System.out.println();
@@ -27,50 +27,51 @@ public class ArrayEx {
 		System.out.println();
 		System.out.println("Number from 1.1 to 3.2 = " + numInRange(numbers, 1.0, 3.1));
 	}
-	
+
 	public static int numInRange(double[] nums, double lowerBound, double upperBound) {
 		// TODO: Return the count of how many of the array entries are between the two
 		// bounds, inclusive.
 		int sum = 0;
-		for(int i = 0; i<nums.length; ++i) {
-			if(i>=lowerBound && i <=upperBound) {
-			sum+=1;
+		for (int i = 0; i < nums.length; ++i) {
+			if (nums[i] >= lowerBound && nums[i] <= upperBound) {
+				sum += 1;
 			}
 		}
 		return sum;
 	}
 
 	public static void printArray(double[] numbers) {
-		// TODO: Print each element of the array as follows: {numbers[0], numbers[1], ...}.
+		// TODO: Print each element of the array as follows: {numbers[0], numbers[1],
+		// ...}.
 		System.out.print("{");
-		for (int i=0;i<numbers.length;++i) {
-			if(numbers[i]!=numbers[numbers.length-1]) {
+		for (int i = 0; i < numbers.length; ++i) {
+			if (numbers[i] != numbers[numbers.length - 1]) {
 				System.out.print(numbers[i]);
 				System.out.print(", ");
-			}
-			else {
+			} else {
 				System.out.print(numbers[i]);
 			}
-			
+
 		}
 		System.out.print('}');
 	}
-	
+
 	public static double calcAverage(double[] numbers) {
 		// TODO: Return the average value of 'numbers'.
-		return calcSum1(numbers)/numbers.length;
-		
+		return calcSum1(numbers) / numbers.length;
+
 	}
+
 	public static int numPositive(double[] numbers) {
 		// TODO: Return the count of how many of the array entries are greater than or
 		// equal to zero.
-		int sum=0;
-		for(int i=0;i<numbers.length;++i) {
-			if(numbers[i]>0) {
-				sum+=1;
+		int sum = 0;
+		for (int i = 0; i < numbers.length; ++i) {
+			if (numbers[i] > 0) {
+				sum += 1;
 			}
 		}
-		
+
 		return sum;
 	}
 
