@@ -17,22 +17,13 @@ public class One {
 
 	// Task 3
 	public static void power(A a, int y) {
-		int sum = a.x;
-		for (int i = 1; i < y; ++i) {
-			sum *= a.x;
-		}
-		a.x=sum;
-		// Raise 'a.x' to the 'y'th power.
+		a.x= power(a.x,y);
 	}
 
 	// Task 4
 	public static void power(int[] array, int y) {
 		for (int i = 0; i < array.length; ++i) {
-			int sum = array[i];
-			for (int j = 1; j < y; ++j) {
-				sum *= array[i];
-			}
-			array[i] = sum;
+			array[i] = power(array[i],y);
 		}
 		// Raise each element of an array to the 'y'th power.
 	}
