@@ -4,13 +4,13 @@ class One {
 	int x;
 
 	One() {
+		this(999);
 		System.out.println("One::One()");
-		this.x=999;
 	}
 
 	One(int x) {
 		System.out.println("One::One(int)");
-		x = this.x;
+		this.x = x;
 	}
 
 	public One getInstance() {
