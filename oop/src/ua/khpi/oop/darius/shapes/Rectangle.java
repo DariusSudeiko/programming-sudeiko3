@@ -1,9 +1,9 @@
 package ua.khpi.oop.darius.shapes;
 
-public class Rectangle {
-	double width, height;
+class Rectangle {
+	protected double width, height;
 
-	double getArea() {
+	protected double getArea() {
 		return width * height;
 	}
 

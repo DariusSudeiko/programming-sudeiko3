@@ -1,5 +1,7 @@
 package ua.khpi.oop.darius.shapes;
 
+import java.util.Arrays;
+
 public class CircleTest {
 
 	public static void main(String[] args) {
@@ -13,7 +15,7 @@ public class CircleTest {
 		for (int i = 0; i < circles.length; ++i) {
 			radiusList[i] = circles[i].radius;
 		}
-		bubbleSort.sort(radiusList, 100);
+		Arrays.sort(radiusList);
 
 		System.out.print("biggest in the list = " + radiusList[radiusList.length - 1]);
 		System.out.print("\nsmallest in the list = " + radiusList[0]);
