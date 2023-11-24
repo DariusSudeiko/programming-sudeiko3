@@ -13,7 +13,7 @@ public class CircleTest {
 		}
 		double[] radiusList = new double[100];
 		for (int i = 0; i < circles.length; ++i) {
-			radiusList[i] = circles[i].radius;
+			radiusList[i] = circles[i].getRadius();
 		}
 		Arrays.sort(radiusList);
 

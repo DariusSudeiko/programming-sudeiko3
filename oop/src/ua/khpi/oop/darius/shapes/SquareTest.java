@@ -6,7 +6,7 @@ public class SquareTest {
 			double width = 10 * Math.random();
 			Square s = new Square(width);
 			System.out.println("Square " + i);
-			System.out.println("Width:  " + s.width);
+			System.out.println("Width:  " + s.getwidth());
 			System.out.println("Area:   " + s.getArea());
 			System.out.println();
 		}
@@ -15,7 +15,7 @@ public class SquareTest {
 			Square s = new Square(0.0);
 			s.setArea(area);
 			System.out.println("Square " + i);
-			System.out.println("Width:          " + s.width);
+			System.out.println("Width:          " + s.getwidth());
 			System.out.println("Requested area: " + area);
 			System.out.println("Actual Area:    " + s.getArea());
 			System.out.println();

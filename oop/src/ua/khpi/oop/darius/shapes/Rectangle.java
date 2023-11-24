@@ -1,13 +1,21 @@
 package ua.khpi.oop.darius.shapes;
 
 class Rectangle {
-	protected double width, height;
+	private double width, height;
 
-	protected double getArea() {
+	public double getArea() {
 		return width * height;
 	}
 
-	Rectangle(double i, double j) {
+	public double getwidth() {
+		return width;
+	}
+
+	public double getheight() {
+		return width;
+	}
+
+	public Rectangle(double i, double j) {
 		this.width = i;
 		this.height = j;
 	}

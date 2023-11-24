@@ -7,8 +7,8 @@ public class RectangleTest {
 			double height = 10 * Math.random();
 			Rectangle r = new Rectangle(width, height);
 			System.out.println("Rectangle " + (i + 1));
-			System.out.println("Width:  " + r.width);
-			System.out.println("Height: " + r.height);
+			System.out.println("Width:  " + r.getwidth());
+			System.out.println("Height: " + r.getheight());
 			System.out.println("Area:   " + r.getArea());
 			System.out.println();
 		}
