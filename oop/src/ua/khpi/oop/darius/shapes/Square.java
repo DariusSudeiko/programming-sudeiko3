@@ -2,7 +2,7 @@ package ua.khpi.oop.darius.shapes;
 
 import java.lang.Math;
 
-class Square {
+public class Square {
 	private double width;
 	private double area;
 

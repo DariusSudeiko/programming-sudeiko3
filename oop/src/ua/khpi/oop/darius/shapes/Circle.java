@@ -2,7 +2,7 @@ package ua.khpi.oop.darius.shapes;
 
 import java.lang.Math;
 
-class Circle {
+public class Circle {
 	private double radius;
 	private double area;
 
