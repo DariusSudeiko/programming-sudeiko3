@@ -48,23 +48,4 @@ public class Square extends Rectangle {
 		return "Square: side length = " + this.getWidth() + ", area = " + this.getArea();
 	}
 
-	// Override Rectangle's methods
-
-	@Override
-	public void setWidth(double sideLength) {
-		super.setWidth(sideLength);
-		super.setHeight(sideLength);
-	}
-
-	@Override
-	public void setHeight(double sideLength) {
-		super.setHeight(sideLength);
-		super.setWidth(sideLength);
-	}
-
-	@Override
-	public double getArea() {
-		return super.getArea(); // Area of a square is width * width
-	}
-
 }

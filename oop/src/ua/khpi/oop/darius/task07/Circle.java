@@ -1,7 +1,5 @@
 package ua.khpi.oop.darius.task07;
 
-import java.lang.Math;
-
 /**
  * Represents a Circle with a given radius.
  */
@@ -13,7 +11,6 @@ public class Circle {
      * @param area
      */
 	private double radius;
-	private double area;
 	/**
      * Constructs a Circle object with the given radius.
      * 
@@ -52,8 +49,4 @@ public class Circle {
      * 
      * @param i area of the circle
      */
-	public void setArea(double i) {
-		area = i;
-		radius = Math.sqrt(area / Math.PI);
-	}
 }
