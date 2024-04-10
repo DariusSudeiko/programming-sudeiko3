@@ -3,7 +3,7 @@ package ua.khpi.oop.darius.task08;
 /**
  * Represents a Circle with a given radius.
  */
-public class Circle {
+public class Circle  extends Shape{
 	/**
      * radius and area
      * 
@@ -41,6 +41,7 @@ public class Circle {
      * 
      * @return the area of the circle
      */
+	@Override
 	public double getArea() {
 		return 3.14 * radius * radius;
 	}

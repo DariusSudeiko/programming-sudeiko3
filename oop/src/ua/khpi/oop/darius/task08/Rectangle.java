@@ -3,7 +3,7 @@ package ua.khpi.oop.darius.task08;
 /**
  * Represents a rectangle with a specified width and height.
  */
-public class Rectangle {
+public class Rectangle extends Shape{
     private double width, height;
 
     /**
@@ -49,6 +49,7 @@ public class Rectangle {
      * 
      * @return The area of the rectangle.
      */
+    @Override
     public double getArea() {
         return width * height;
     }

@@ -4,7 +4,7 @@ package ua.khpi.oop.darius.task08;
  * Represents a square, which is a special case of a rectangle with equal side
  * lengths.
  */
-public class Square extends Rectangle{
+public class Square extends Rectangle {
 
 	/**
 	 * Constructs a square with the specified side length.
@@ -43,7 +43,7 @@ public class Square extends Rectangle{
 	 * 
 	 * @return A string representation of the square.
 	 */
-	@Override
+	
 	public String toString() {
 		return "Square: side length = " + this.getWidth() + ", area = " + this.getArea();
 	}
