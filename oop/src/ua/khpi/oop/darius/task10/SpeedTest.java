@@ -8,11 +8,6 @@ import java.util.List;
 
 public class SpeedTest {
 	public static void main(String[] args) {
-		// Perform timing tests
-		testAccessMiddleElement();
-	}
-
-	public static void testAccessMiddleElement() {
 		// Define the sizes of the lists to be tested
 		int[] listSizes = { 1000, 10000, 100000, 1000000 };
 
